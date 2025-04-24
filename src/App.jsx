@@ -40,12 +40,8 @@ function App() {
 
 
       {/* HOME */}
-      <section
-      id="home"
-      className="h-screen bg-gray-900 bg-cover bg-center flex flex-col justify-center items-center text-center px-6 pt-32"
-      >
-      <img src={debianLogo} alt="Debian Background" className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none -z-10" />
-
+       <section id="home" className="relative h-screen flex flex-col justify-center items-center text-center px-6 pt-32 overflow-hidden">
+        <img src={debianLogo} alt="Debian BG" className="absolute inset-0 w-full h-full object-cover opacity-10 -z-10 pointer-events-none" />
         <div className="max-w-3xl mx-auto">
           <h4 className="text-red-400 font-semibold text-sm mb-2 uppercase">Open Source. Stable. Secure.</h4>
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-4">Welcome to Debian</h1>
