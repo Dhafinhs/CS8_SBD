@@ -41,11 +41,11 @@ function App() {
 
       {/* HOME */}
       <section
-        id="home"
-        className="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-6 pt-32"
-        style={{ backgroundImage: `url('/src/assets/debian.svg')` }}
-        data-aos="fade-up"
+      id="home"
+      className="h-screen bg-gray-900 bg-cover bg-center flex flex-col justify-center items-center text-center px-6 pt-32"
       >
+      <img src={debianLogo} alt="Debian Background" className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none -z-10" />
+
         <div className="max-w-3xl mx-auto">
           <h4 className="text-red-400 font-semibold text-sm mb-2 uppercase">Open Source. Stable. Secure.</h4>
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-4">Welcome to Debian</h1>
@@ -64,7 +64,7 @@ function App() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           {/* Image */}
           <div className="flex justify-center">
-            <img src="/src/assets/debian-logo.svg" alt="Debian Logo" className="w-64 md:w-80" />
+            <img src={debianTextLogo} alt="Debian Logo" className="w-64 md:w-80" />
           </div>
           {/* Text */}
           <div className="text-left">
@@ -128,7 +128,7 @@ function App() {
       data-aos-anchor-placement="top-bottom"
     >
       <img
-        src="/src/assets/cpu.jpg"
+        src={cpuImage}
         alt="Debian Core Feature"
         className="rounded-lg shadow-lg max-w-full h-auto brightness-75 transform transition duration-300 hover:scale-105"
       />
@@ -161,7 +161,7 @@ function App() {
 <section
   id="arch"
   className="relative h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-6 pt-32"
-  style={{ backgroundImage: `url('/src/assets/cpu.jpg')` }}
+  style={{ backgroundImage: `url(${cpuImage})` }}
   data-aos="fade-up"
 >
   {/* OVERLAY HITAM */}
