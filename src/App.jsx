@@ -1,4 +1,8 @@
 import './App.css';
+import debianLogo from './assets/debian.svg';
+import cpuImage from './assets/cpu.jpg';
+import debianTextLogo from './assets/debian-logo.svg';
+
 
 function App() {
   return (
@@ -10,7 +14,7 @@ function App() {
     
     {/* Kiri: Logo */}
     <div className="flex items-center space-x-2">
-      <img src="/src/assets/debian.svg" alt="Debian Logo" className="h-10 w-10" />
+      <img src= {debianLogo} alt="Debian Logo" className="h-10 w-10" />
       <span className="text-white font-bold text-lg tracking-wider">
         <span className="text-red-500">DEBIAN</span> OS
       </span>
